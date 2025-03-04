@@ -6,7 +6,7 @@ This project contains **batch scripts (`.bat`)** that automatically delete files
 The cleanup process is scheduled to run **daily at 00:00**.  
 
 ##  Features
-✅ Deletes files from **Screenshots** and **Downloads** folders.  
+✅ Deletes files from specific folders.  
 ✅ Runs **automatically** every day at **midnight** (customizable).  
 ✅ Uses **Windows Task Scheduler** for execution.  
 ✅ If the scheduled task is missed, it **runs as soon as the user logs in**.  
@@ -16,16 +16,8 @@ The cleanup process is scheduled to run **daily at 00:00**.
 
 ##  Installation & Setup
 
-###  Clone the Repository
-```sh
-git clone https://github.com/t-ros/Scheduled-File-Cleaner.git
-cd Scheduled-File-Cleaner
-````
 ###  Configure the Batch Scripts
-Edit the `.bat` files to specify the directories you want to clean.  
-By default, they delete files from:  
-- **Screenshots:** `%USERPROFILE%\Pictures\Screenshots`  
-- **Downloads:** `%USERPROFILE%\Downloads`  
+You can find a collection of `.bat` scripts on `https://github.com/t-ros/Scheduled-File-Cleaner/tree/main/Scripts`, edit them to specify the directories you want to clean.  
 
 ###  Create a Scheduled Task in Windows
 
@@ -37,13 +29,13 @@ By default, they delete files from:
 - **Name:** `Scheduled File Cleaner`  
 - **Security options:**  
   ✅ "Run only when user is logged on"  
-  ✅ *(Optional)* "Run with highest privileges"  
+  ✅ *(Optional)* "Run with highest privileges"
 
 ####  Additional Settings
 1. Go to the **Settings** tab:  
   ✅ "Run task as soon as possible after a scheduled start is missed"  
   ✅ *(Optional)* "Stop the task if it runs longer than X minutes"
-2. Click **OK** and enter your **administrator password** if prompted.  
+2. Click **OK**.
 
 ####  Configure the Trigger (Schedule Customization)
 1. Go to the **Triggers** tab → Click **"New..."**.  
@@ -62,7 +54,7 @@ By default, they delete files from:
 ##  Testing the Task
 To verify if the script runs correctly:  
 - Right-click the task in Task Scheduler → **"Run"**.  
-- Check the folders (`Screenshots` and `Downloads`) to confirm files were deleted.  
+- Check the folders you tried cleaning to confirm files were deleted.  
 
 ---
 
