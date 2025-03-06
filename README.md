@@ -59,7 +59,7 @@ To verify if the script runs correctly:
 ---
 
 ##  Important Notes
-⚠️ **Files are deleted and moved to the Recycle Bin (unless too large)**.   
+⚠️ **Files will be permanently deleted**.   
 ⚠️ **Customize the script** before running to target only the folders you want to clean.  
 ⚠️ Consider making a **Backup** before running new scripts.
 
