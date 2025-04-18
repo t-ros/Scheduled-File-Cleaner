@@ -64,6 +64,3 @@ To verify if the script runs correctly:
 ⚠️ Consider making a **Backup** before running new scripts.
 
 ---
-
-##  License
-This project is licensed under the **MIT License**.
